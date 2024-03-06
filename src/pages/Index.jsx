@@ -69,6 +69,44 @@ const Index = () => {
             </Box>
           ))}
         </SimpleGrid>
+        <Heading as="h2" size="xl" mt={10} mb={6}>
+          About Me
+        </Heading>
+        <Text fontSize="lg" mb={6}>
+          Passionate Cloud Engineer with expertise in Site Reliability Engineering and DevOps practices. I enjoy automating cloud infrastructure and optimizing system performance.
+        </Text>
+
+        <Heading as="h2" size="xl" mt={10} mb={6}>
+          Tech Stack
+        </Heading>
+        <SimpleGrid columns={{ base: 2, md: 4, lg: 6 }} spacing={4} mb={6}>
+          <Text textAlign="center">Docker</Text>
+          <Text textAlign="center">Kubernetes</Text>
+          <Text textAlign="center">Terraform</Text>
+          <Text textAlign="center">AWS</Text>
+          <Text textAlign="center">Prometheus</Text>
+          <Text textAlign="center">Grafana</Text>
+        </SimpleGrid>
+
+        <Heading as="h2" size="xl" mt={10} mb={6}>
+          GitHub Stats
+        </Heading>
+        <Image src="https://github-readme-stats.vercel.app/api?username=GirishCodeAlchemy&show_icons=true" alt="GitHub Stats" mb={6} />
+
+        <Heading as="h2" size="xl" mt={10} mb={6}>
+          Certifications
+        </Heading>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={4}>
+          <Box shadow="md" borderWidth="1px" p={4}>
+            <Text textAlign="center">AWS Certified Solutions Architect</Text>
+          </Box>
+          <Box shadow="md" borderWidth="1px" p={4}>
+            <Text textAlign="center">Certified Kubernetes Administrator</Text>
+          </Box>
+          <Box shadow="md" borderWidth="1px" p={4}>
+            <Text textAlign="center">Terraform Associate Certification</Text>
+          </Box>
+        </SimpleGrid>
       </Container>
     </Box>
   );
