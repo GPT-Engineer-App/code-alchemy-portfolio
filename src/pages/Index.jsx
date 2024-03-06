@@ -5,7 +5,14 @@ const blogArticles = [
   // Dummy blog articles data
   { title: "Understanding Kubernetes", description: "An overview of K8s architecture...", link: "#" },
   { title: "CI/CD Best Practices", description: "How to streamline your deployment...", link: "#" },
-  // ... add more blog articles here
+  { title: "Deploying Microservices", description: "A complete guide for deploying microservices with Docker", link: "#" },
+  { title: "Monitoring with Prometheus", description: "Learn how to monitor your applications with Prometheus", link: "#" },
+  { title: "The Art of Command Line", description: "Master the command line with these essential tips", link: "#" },
+  { title: "Infrastructure as Code", description: "An introduction to managing infrastructure using code", link: "#" },
+  { title: "Serverless Architectures", description: "Understanding the benefits and challenges of serverless", link: "#" },
+  { title: "Database Scaling Strategies", description: "Techniques for scaling databases horizontally and vertically", link: "#" },
+  { title: "Edge Computing Basics", description: "Exploring the world of edge computing", link: "#" },
+  { title: "Implementing CI Pipelines", description: "Step-by-step guide to implementing continuous integration pipelines", link: "#" },
 ];
 
 const openSourceProjects = [
