@@ -38,44 +38,13 @@ const Index = () => {
             Cloud Engineer | SRE | DevOps Advocate | Creator of GirishCodeAlchemy
           </Text>
         </VStack>
-
-        <Heading as="h2" size="xl" mt={10} mb={6}>
-          Blog Articles
-        </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
-          {blogArticles.map((article, index) => (
-            <Box key={index} p={5} shadow="md" borderWidth="1px">
-              <Heading fontSize="xl">{article.title}</Heading>
-              <Text mt={4}>{article.description}</Text>
-              <Link href={article.link} isExternal>
-                Read more <FaExternalLinkAlt />
-              </Link>
-            </Box>
-          ))}
-        </SimpleGrid>
-
-        <Heading as="h2" size="xl" mt={10} mb={6}>
-          Open Source Projects
-        </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
-          {openSourceProjects.map((project, index) => (
-            <Box key={index} p={5} shadow="md" borderWidth="1px">
-              <Heading fontSize="xl">{project.name}</Heading>
-              <Text mt={4}>{project.description}</Text>
-              <Link href={project.link} isExternal>
-                <IconButton aria-label="GitHub link" icon={<FaGithub />} mr={2} />
-              </Link>
-              <Badge colorScheme="green">Open Source</Badge>
-            </Box>
-          ))}
-        </SimpleGrid>
+        // Blog Articles and Open Source Projects sections have been moved to their own components
         <Heading as="h2" size="xl" mt={10} mb={6}>
           About Me
         </Heading>
         <Text fontSize="lg" mb={6}>
           Passionate Cloud Engineer with expertise in Site Reliability Engineering and DevOps practices. I enjoy automating cloud infrastructure and optimizing system performance.
         </Text>
-
         <Heading as="h2" size="xl" mt={10} mb={6}>
           Tech Stack
         </Heading>
@@ -87,12 +56,10 @@ const Index = () => {
           <Text textAlign="center">Prometheus</Text>
           <Text textAlign="center">Grafana</Text>
         </SimpleGrid>
-
         <Heading as="h2" size="xl" mt={10} mb={6}>
           GitHub Stats
         </Heading>
         <Image src="https://github-readme-stats.vercel.app/api?username=GirishCodeAlchemy&show_icons=true" alt="GitHub Stats" mb={6} />
-
         <Heading as="h2" size="xl" mt={10} mb={6}>
           Certifications
         </Heading>
